@@ -10,3 +10,4 @@ A collection of sample databases for PostgreSQL.
 * Pagila - Movie rental database with actors, ratings, payments, etc.
 * USDA - food database
 * World - city, country, language for the world
+* Role Based Access Control - authentication solution
