@@ -9,5 +9,5 @@ A collection of sample databases for PostgreSQL.
 * ISO-3166 - All countries and subcountries in the world
 * Pagila - Movie rental database with actors, ratings, payments, etc.
 * USDA - food database
-* World - city, country, language for the world
+* World - Cities, Countries, and what language they speak
 * Role Based Access Control - authentication solution
