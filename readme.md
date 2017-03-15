@@ -11,3 +11,7 @@ A collection of sample databases for PostgreSQL.
 * USDA - food database
 * World - Cities, Countries, and what language they speak
 * Role Based Access Control - authentication solution
+
+## Other Resources
+
+- http://www.databaseanswers.org/data_models/
