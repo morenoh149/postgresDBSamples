@@ -1,6 +1,6 @@
 # Postres Database Samples
 
-copy of http://pgfoundry.org/projects/dbsamples/
+copy of https://www.postgresql.org/ftp/projects/pgFoundry/dbsamples/
 
 A collection of sample databases for PostgreSQL.
 
