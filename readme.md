@@ -1,4 +1,4 @@
-# Postres Database Samples
+# PostgreSQL Database Samples
 
 copy of https://www.postgresql.org/ftp/projects/pgFoundry/dbsamples/
 
