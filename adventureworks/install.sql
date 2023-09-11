@@ -235,8 +235,8 @@ CREATE SCHEMA HumanResources
   )
   CREATE TABLE EmployeeDepartmentHistory(
     BusinessEntityID INT NOT NULL,
-    DepartmentID smallint NOT NULL,
-    ShiftID smallint NOT NULL, -- tinyint
+    DepartmentID INT NOT NULL,
+    ShiftID INT NOT NULL, -- tinyint
     StartDate DATE NOT NULL,
     EndDate DATE NULL,
     ModifiedDate TIMESTAMP NOT NULL CONSTRAINT "DF_EmployeeDepartmentHistory_ModifiedDate" DEFAULT (NOW()),
@@ -495,7 +495,7 @@ CREATE SCHEMA Production
   )
   CREATE TABLE ProductInventory(
     ProductID INT NOT NULL,
-    LocationID smallint NOT NULL,
+    LocationID INT NOT NULL,
     Shelf varchar(10) NOT NULL,
     Bin smallint NOT NULL, -- tinyint
     Quantity smallint NOT NULL CONSTRAINT "DF_ProductInventory_Quantity" DEFAULT (0),
@@ -597,7 +597,7 @@ CREATE SCHEMA Production
     StartDate TIMESTAMP NOT NULL,
     EndDate TIMESTAMP NULL,
     DueDate TIMESTAMP NOT NULL,
-    ScrapReasonID smallint NULL,
+    ScrapReasonID INT NULL,
     ModifiedDate TIMESTAMP NOT NULL CONSTRAINT "DF_WorkOrder_ModifiedDate" DEFAULT (NOW()),
     CONSTRAINT "CK_WorkOrder_OrderQty" CHECK (OrderQty > 0),
     CONSTRAINT "CK_WorkOrder_ScrappedQty" CHECK (ScrappedQty >= 0),
@@ -607,7 +607,7 @@ CREATE SCHEMA Production
     WorkOrderID INT NOT NULL,
     ProductID INT NOT NULL,
     OperationSequence smallint NOT NULL,
-    LocationID smallint NOT NULL,
+    LocationID INT NOT NULL,
     ScheduledStartDate TIMESTAMP NOT NULL,
     ScheduledEndDate TIMESTAMP NOT NULL,
     ActualStartDate TIMESTAMP NULL,
