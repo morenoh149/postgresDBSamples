@@ -1230,7 +1230,7 @@ SELECT 'Copying data into Sales.ShoppingCartItem';
 SELECT 'Copying data into Sales.SpecialOffer';
 \copy Sales.SpecialOffer FROM './data/SpecialOffer.csv' DELIMITER E'\t' CSV;
 SELECT 'Copying data into Sales.SpecialOfferProduct';
-\copy Sales.SpecialOfferProduct FROM 'SpecialOfferProduct.csv' DELIMITER E'\t' CSV;
+\copy Sales.SpecialOfferProduct FROM './data/SpecialOfferProduct.csv' DELIMITER E'\t' CSV;
 SELECT 'Copying data into Sales.Store';
 \copy Sales.Store FROM './data/Store.csv' DELIMITER E'\t' CSV;
 
